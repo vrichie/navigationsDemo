@@ -1,21 +1,15 @@
 
 import React from 'react';
-
 import Home from './screens/Home';
 import Details from './screens/Details';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-
 export type RootStackParamList ={
   Home:undefined,
   Details:{productId: string}
 };
-
 const Stack = createNativeStackNavigator<RootStackParamList>();
-
 function App(): React.JSX.Element {
-
-
   return (
    <NavigationContainer>
     <Stack.Navigator initialRouteName="Home">
@@ -27,7 +21,4 @@ function App(): React.JSX.Element {
    </NavigationContainer>
   );
 }
-
-
-
 export default App;
