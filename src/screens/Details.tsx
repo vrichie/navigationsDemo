@@ -3,10 +3,7 @@ import React from 'react';
 import { RootStackParamList } from '../App';
 import { useNavigation } from '@react-navigation/native';
 import type {NativeStackNavigationProp, NativeStackScreenProps} from '@react-navigation/native-stack';
-
-
 type DetailsProps=NativeStackScreenProps<RootStackParamList,'Details'>
-
 const Details = ({route}:DetailsProps) => {
     const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
     const {productId} = route.params;
@@ -28,5 +25,4 @@ const styles = StyleSheet.create({
         color:'#0000',
     },
 });
-
 export default Details;
