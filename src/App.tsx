@@ -13,10 +13,8 @@ function App(): React.JSX.Element {
   return (
    <NavigationContainer>
     <Stack.Navigator initialRouteName="Home">
-
       <Stack.Screen name="Home" component={Home} options={{title:'Recent Posts'}}/>
       <Stack.Screen name="Details" component={Details}/>
-
     </Stack.Navigator>
    </NavigationContainer>
   );
